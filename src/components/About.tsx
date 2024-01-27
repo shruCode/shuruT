@@ -56,28 +56,19 @@ const AboutPage = () => {
           <BiLogoTelegram className='text-xl font-bold' />
           <h2 className='text-xl font-bold'>Contact:</h2>
           <a
-            href='http://t.me/estif1727'
+            href='mailto:shrutikamboj7171@gmail.com'
             target='_blank'
             className='hover:underline'
             rel='noopener noreferrer'
           >
-            Telegram
-          </a>
-          ,
-          <a
-            href='https://wa.link/e3397e'
-            target='_blank'
-            className='hover:underline'
-            rel='noopener noreferrer'
-          >
-            Whatsapp
+            Gmail
           </a>
         </div>
         <div className='flex items-center gap-3'>
           <BsGithub className='text-xl font-bold' />
           <h2 className='text-xl font-bold'>Source code:</h2>
           <a
-            href='http://github.com/Estifanos12/ShuruT'
+            href='https://github.com/shruCode/shuruT'
             target='_blank'
             className='hover:underline'
             rel='noopener noreferrer'

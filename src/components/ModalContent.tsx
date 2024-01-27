@@ -28,12 +28,11 @@ const StyledCopyButton = styled.button`
 
 const ModalContent = ({ totalTime, history, results }: ModalContentProps) => {
   const [copied, setCopied] = useState(false);
-  const [imageCopied, setImageCopied] = useState(false);
+  // const [imageCopied, setImageCopied] = useState(false);
 
   const { copyTextToClipboard } = useClipboard();
   const { ref, image, getImage } = useScreenShot();
   const { systemTheme } = useThemeContext();
-
   return (
     <div
       className='mx-auto flex h-full w-[95%] flex-col gap-10 pb-10 pt-8 font-mono'
@@ -156,10 +155,10 @@ const ModalContent = ({ totalTime, history, results }: ModalContentProps) => {
                 new ClipboardItem({ [data.type]: data }),
               ]);
 
-              setImageCopied(true);
-              setTimeout(() => {
-                setImageCopied(false);
-              }, 2000);
+              // setImageCopied(true);
+              // setTimeout(() => {
+              //   setImageCopied(false);
+              // }, 2000);
             } catch (error) {
               console.log(error);
             }
@@ -167,9 +166,9 @@ const ModalContent = ({ totalTime, history, results }: ModalContentProps) => {
         >
           <FaCameraRetro className=' text-xl' />
           <span className='text-lg hover:underline'>
-            Screenshot your results and share to your friends🔥
+            Screenshot your results and share to your friends
           </span>
-          <div
+          {/* <div
             className='rounded-md'
             style={{
               backgroundColor: systemTheme.background.secondary,
@@ -183,7 +182,7 @@ const ModalContent = ({ totalTime, history, results }: ModalContentProps) => {
                 Image copied to clipboard 😊
               </span>
             ) : null}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

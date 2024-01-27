@@ -74,6 +74,22 @@ const TimeCategory = ({
         >
           60s
         </span>
+
+        <span
+          className={`category ${
+            time === 300000 ? 'font-bold underline' : ''
+          } hover:underline`}
+          onClick={() => {
+            setTime(300000);
+            setLocalStorage('time', 300000);
+            restart();
+          }}
+          style={{
+            color: time === 300000 ? systemTheme.text.secondary : '',
+          }}
+        >
+          5m       
+           </span>
       </div>
     </div>
   );
